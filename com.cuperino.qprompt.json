@@ -23,14 +23,26 @@
    ],
    "modules": [
       {
+         "name": "qhotkey",
+         "buildsystem": "cmake-ninja",
+         "sources": [
+            {
+               "type": "git",
+               "url": "https://github.com/Skycoder42/QHotkey.git",
+               "branch": "master",
+               "commit": "34777f2e91b72cdc62a415975cc3ec53475ed022"
+            }
+         ]
+      },
+      { 
          "name": "qprompt",
          "buildsystem": "cmake-ninja",
          "sources": [
             {
                "type": "git",
                "url": "https://github.com/Cuperino/QPrompt.git",
-               "tag": "v1.0.0-flathub",
-               "commit": "abf46455cf8db56583722417f34c69dee75cf75a"
+               "tag": "v1.0.0-flatpak",
+               "commit": "cba9e3e002eac8d18e394eb68307cabd4ea04df5"
             }
          ]
       }
