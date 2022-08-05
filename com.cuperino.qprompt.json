@@ -41,8 +41,8 @@
             {
                "type": "git",
                "url": "https://github.com/Cuperino/QPrompt.git",
-               "branch": "v1.1",
-               "commit": "b56fbfcd3b0d1ec0150b45587b4d4e46731e7684"
+               "tag": "v1.1.0",
+               "commit": "8fc947c9496068602cca686c0c887b867e22f890"
             }
          ]
       }
