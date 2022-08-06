@@ -29,7 +29,6 @@
             {
                "type": "git",
                "url": "https://github.com/Skycoder42/QHotkey.git",
-               "branch": "master",
                "commit": "34777f2e91b72cdc62a415975cc3ec53475ed022"
             }
          ]
