@@ -1,7 +1,7 @@
 {
    "id": "com.cuperino.qprompt",
    "runtime": "org.kde.Platform",
-   "runtime-version": "5.15-21.08",
+   "runtime-version": "5.15-22.08",
    "sdk": "org.kde.Sdk",
    "command": "qprompt",
    "finish-args": [
@@ -40,8 +40,8 @@
             {
                "type": "git",
                "url": "https://github.com/Cuperino/QPrompt.git",
-               "tag": "v1.1.1-flatpak",
-               "commit": "b154fb52ad36216d2c4cc26c87fa6316bd8c98eb"
+               "tag": "v1.1.2-flatpak",
+               "commit": "274a823f4b7268c29b95cba8649e0dbdb6b61fee"
             }
          ]
       }
