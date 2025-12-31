@@ -9,7 +9,13 @@
       "--socket=fallback-x11",
       "--socket=wayland",
       "--device=dri",
-      "--share=network"
+      "--share=network",
+      "--filesystem=xdg-desktop:create ",
+      "--filesystem=xdg-documents:create ",
+      "--filesystem=xdg-download:create ",
+      "--filesystem=/media:create",
+      "--filesystem=/run/media:create",
+      "--filesystem=/mnt:create"
    ],
    "cleanup" : [
       "/include",
