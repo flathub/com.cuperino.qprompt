@@ -1,14 +1,21 @@
 {
    "id": "com.cuperino.qprompt",
    "runtime": "org.kde.Platform",
-   "runtime-version": "5.15-22.08",
+   "runtime-version": "6.8",
    "sdk": "org.kde.Sdk",
    "command": "qprompt",
    "finish-args": [
       "--share=ipc",
       "--socket=fallback-x11",
       "--socket=wayland",
-      "--device=dri"
+      "--device=dri",
+      "--share=network",
+      "--filesystem=xdg-desktop:create ",
+      "--filesystem=xdg-documents:create ",
+      "--filesystem=xdg-download:create ",
+      "--filesystem=/media:create",
+      "--filesystem=/run/media:create",
+      "--filesystem=/mnt:create"
    ],
    "cleanup" : [
       "/include",
@@ -25,23 +32,35 @@
       {
          "name": "qhotkey",
          "buildsystem": "cmake-ninja",
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DBUILD_SHARED_LIBS=ON",
+            "-DQT_DEFAULT_MAJOR_VERSION=6"
+         ],
          "sources": [
             {
                "type": "git",
                "url": "https://github.com/Skycoder42/QHotkey.git",
-               "commit": "34777f2e91b72cdc62a415975cc3ec53475ed022"
+               "commit": "6c0e98492c59206139f8490706aadeb8ed033057"
             }
          ]
       },
-      { 
+      {
          "name": "qprompt",
          "buildsystem": "cmake-ninja",
+         "config-opts": [
+            "-DKDE_INSTALL_USE_QT_SYS_PATHS=ON",
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DENABLE_TESTING=OFF",
+            "-DBUILD_TESTING=OFF",
+            "-DSOURCE_DEPENDENCIES_EXCLUSIVELY_FROM_SYSTEM=ON"
+         ],
          "sources": [
             {
                "type": "git",
                "url": "https://github.com/Cuperino/QPrompt.git",
-               "tag": "v1.1.6-flatpak",
-               "commit": "51788ebfab4314c3b9e336dd492d3e9d8502a6c6"
+               "tag": "v2.0.0-flatpak",
+               "commit": "5632526c609ef9b0d5f1a63b06249c7a2d240043"
             }
          ]
       }
