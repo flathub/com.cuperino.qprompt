@@ -1,7 +1,7 @@
 {
    "id": "com.cuperino.qprompt",
    "runtime": "org.kde.Platform",
-   "runtime-version": "6.9",
+   "runtime-version": "6.11",
    "sdk": "org.kde.Sdk",
    "command": "qprompt",
    "finish-args": [
@@ -53,9 +53,9 @@
          "sources": [
             {
                "type": "git",
-               "url": "https://github.com/Cuperino/QPrompt.git",
-               "tag": "v2.0.2",
-               "commit": "2a2f821eaa98eeae4996121c1df34e24ed6be3aa"
+               "url": "https://github.com/Cuperino/QPrompt-Teleprompter.git",
+               "tag": "v2.0.3",
+               "commit": "7f45363d20ceb49a72fb98f299aa432c482844f3"
             }
          ]
       }
